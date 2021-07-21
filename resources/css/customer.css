@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+@media screen and (min-width: 768px) {
+    body {
+      font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+  
+.nav-items {
+  position: relative;
+  right: 200px;
+  top: 2px;
+}
+  
+.nav-items > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-left: 20px;
+  background-color: #726bec;
+  padding: 8px 24px;
+  margin: 30px;
+  border-radius: 24px;
+}
+  
+.nav-bar > img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left:120px;
+  top:2px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+  
+#customers td, #customers th {
+  border: 1px solid #b8e7fc;
+  padding: 8px;
+}
+  
+#customers tr:nth-child(even) {
+  background-color: #b8e7fc;
+}
+  
+#customers tr:hover {
+  background-color: #b8e7fc;
+}
+  
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #726bec;
+  color: white;
+}
+
+.btn-info{
+  padding: 1rem 1.2rem;
+ font-weight: 700;
+  color: #726bec !important;
+  margin-left: 5px;
+  padding: 0.75rem;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.footer-section {
+  background-color: #726bec;
+  height: 25vh;
+  margin-top: 50px;
+}
+  
+.footer {
+  display: block;
+}
+  
+.footer-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+  
+.social-container {
+  margin-top: 2.5rem;
+}
+  
+.social-container > img {
+  margin-left: 10px;
+  cursor: pointer;
+  width: 30px;
+}
+  
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+  
+.footer-items > a {
+  text-decoration: none;
+  color: #726bec;
+  margin-bottom: 15px;
+  font-weight: 600;
+  background: hsl(0, 0%, 100%);
+  padding: 7px;
+  border-radius: 20px;
+}
+  
+.copyrights {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
