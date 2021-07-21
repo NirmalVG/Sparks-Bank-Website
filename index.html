@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparks Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./resources/css/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./resources/images/favicon.ico"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <img src="./resources/images/sparks-bank-logo.png" alt="" />
+      <div class="nav-items">
+        <a href="#">Home</a>
+        <a href="./customer.html">Transactions</a>
+        <a href="#about_us">About us</a>
+      </div>
+    </nav>
+    <header class="bank-section">
+      <section class="bank-text-container">
+        <h1>
+          Banking<br />
+          Anywhere,<br />
+          Anytime
+        </h1>
+      </section>
+      <section class="bank-img-container">
+        <img src="./resources/images/bank.png" alt="" />
+      </section>
+    </header>
+    <main>
+      <section class="services">
+        <h2>OUR SERVICES</h2>
+        <div class="service-section">
+          <div class="service-item">
+            <img src="./resources/images/Safe-banking-logo.png" alt"" />
+            <h3>Safe and Secure Banking</h3>
+            <p>
+              Providing best security service to minimize the risk of fraud.
+            </p>
+          </div>
+          <div class="service-item">
+            <img
+              src="./resources/images/Instant-fund-transfer-logo.png"
+              alt=""
+            />
+            <h3>Instant Fund Transfer</h3>
+            <p>
+              Sending money from one account to another account in just one
+              click.
+            </p>
+          </div>
+          <div class="service-item">
+            <img src="./resources/images/Availability-logo.png" alt="" />
+            <h3>Availability</h3>
+            <p>
+              Our support team is available 24*7 to attend all your queries.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <h2 id="about_us">ABOUT US</h2>
+        <p>
+          We want you to experience our commitment to you! Sparks Bank is here
+          whenever you want us - providing financial services with integrity,
+          honesty, and privacy.
+        </p>
+      </section>
+      <section class="contact-section">
+        <h2 class="contact_us">CONTACT US</h2>
+        <p>We'd like to hear from you</p>
+        <p>Contact us @ 877-255-7955</p>
+        <p>Email: sparksbank@email.com</p>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <section class="footer-container">
+        <div class="social-container">
+          <img src="./resources/images/facebook.png" alt="" />
+          <img src="./resources/images/instagram.png" alt="" />
+          <img src="./resources/images/twitter.png" alt="" />
+        </div>
+        <div class="footer-items">
+          <a href="#about_us">About us</a>
+          <a href="#contact_us">Contact us</a>
+        </div>
+        <div class="footer-items">
+          <a href="#contact_us">Support</a>
+          <a href="#contact_us">Privacy Policy</a>
+        </div>
+      </section>
+      <section class="copyrights">
+        <p>&copy; Sparks Bank 2021</p>
+      </section>
+    </footer>
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader() {
+        preloader.style.display = "none";
+      }
+    </script>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+  </body>
+</html>

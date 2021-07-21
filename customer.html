@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparks Bank</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./resources/css/customer.css" rel="stylesheet" alt="" />
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <img src="./resources/images/sparks-bank-logo.png" alt="" />
+      <div class="nav-items">
+        <a href="./index.html">Home</a>
+      </div>
+    </nav>
+    <header class="transaction-section">
+      <section id="main" class="coloured-section">
+      <br>
+      <div class="my-info text-center">
+          <button class="btn btn-info" data-toggle="modal" data-target="#sendMoney">Send Money</button>
+          <a class="btn btn-info" href="history.html" data-toggle="modal" data-target="#transactionHistory">See All Transactions</a>
+      </div>
+  
+      <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <form action="">
+                              <div class="input-group mb-3">
+                              <input type="text" id="enterSName" class="form-control" placeholder="Sender's username"
+                                  aria-label="Sender's username" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon2">@email.com</span>
+                              </div>
+                          </div>
+                          <div class="input-group mb-3">
+                              <input type="text" id="enterName" class="form-control" placeholder="Recipient's username"
+                                  aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon2">@email.com</span>
+                              </div>
+                          </div>
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text">Rs</span>
+                              </div>
+                              <input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount"
+                                  aria-label="Amount">
+                              <div class="input-group-append">
+                                  <span class="input-group-text">.00</span>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send
+                          Money</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <ol id="transaction-history-body">
+  
+                      </ol>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <br>
+    </header>
+    <main>
+      <table id="customers">
+        <thead>
+          <tr>
+            <th scope="col">SR. No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">E-mail ID</th>
+            <th scope="col">Bank Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-light">
+            <td scope="row">1</td>
+            <td>Rahul</td>
+            <td>rahul54@email.com</td>
+            <td>
+              <p id="rahulbankbalance">600000</p>
+            </td>
+          </tr class="table-info">
+          <tr>
+            <td scope="row">2</td>
+            <td>Anju</td>
+            <td>anjups@email.com</td>
+            <td>
+              <p id="anjubankbalance">78000</p>
+            </td>
+          </tr>
+          <tr class="table-light">
+            <td scope="row">3</td>
+            <td>Aiswarya</td>
+            <td>aiswarya98@email.com</td>
+            <td>
+              <p id="aiswaryabankbalance">45000</p>
+            </td>
+          </tr>
+          <tr class="table-info">
+            <td scope="row">4</td>
+            <td>Adarsh</td>
+            <td>adarshvp@email.com</td>
+            <td>
+              <p id="adarshbankbalance">96000</p>
+            </td>
+          </tr>
+          <tr class="table-light">
+            <td scope="row">5</td>
+            <td>Krishna</td>
+            <td>krisha1s@email.com</td>
+            <td>
+              <p id="krishnabankbalance">62000</p>
+            </td>
+          </tr>
+          <tr class="table-info">
+            <td scope="row">6</td>
+            <td>Nikhil</td>
+            <td>nikhilprasad@email.com</td>
+            <td>
+              <p id="nikhilbankbalance">180000</p>
+            </td>
+          </tr>
+          <tr class="table-light">
+            <td scope="row">7</td>
+            <td>Sreelakshmi</td>
+            <td>sreelakshmi97@email.com</td>
+            <td>
+              <p id="sreelakshmibankbalance">48000</p>
+            </td>
+          </tr>
+          <tr class="table-info">
+            <td scope="row">8</td>
+            <td>Divya</td>
+            <td>divyamanoj@email.com</td>
+            <td>
+              <p id="divyabankbalance">76000</p>
+            </td>
+          </tr>
+          <tr class="table-light">
+            <td scope="row">9</td>
+            <td>Sooraj</td>
+            <td>soorajmj@email.com</td>
+            <td>
+              <p id="soorajbankbalance">95500</p>
+            </td>
+          </tr>
+          <tr class="table-info">
+            <td scope="row">10</td>
+            <td>Rohit</td>
+            <td>rohitcp@email.com</td>
+            <td>
+              <p id="rohitbankbalance">955000</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer class="footer-section">
+      <section class="footer-container">
+        <div class="social-container">
+          <img src="./resources/images/facebook.png" alt="" />
+          <img src="./resources/images/instagram.png" alt="" />
+          <img src="./resources/images/twitter.png" alt="" />
+        </div>
+        <div class="footer-items">
+          <a href="./index.html">About us</a>
+          <a href="./index.html">Contact us</a>
+        </div>
+        <div class="footer-items">
+          <a href="./index.html">Support</a>
+          <a href="./index.html">Privacy Policy</a>
+        </div>
+      </section>
+      <section class="copyrights">
+        <p>&copy; Sparks Bank 2021</p>
+      </section>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+  </body>
+</html>
