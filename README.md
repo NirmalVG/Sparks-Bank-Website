@@ -1,3 +1,17 @@
-# Sparks Bank Website
+<div align="center">
+<h1> A Fully Functional Restaurant Website </h1>
 
-[Link to Website](https://nirmalvg.github.io/Sparks-Bank-Website/)
+
+[Live Preview](https://rainyroof.vercel.app/)
+
+Don't forget to :star: the repo if you like it :blush:
+
+
+
+<br>
+
+![img 1](img1.png)
+![img 2](img2.png)
+ 
+
+</div>
