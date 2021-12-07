@@ -10,8 +10,8 @@ Don't forget to :star: the repo if you like it :blush:
 
 <br>
 
-![img 1](img/img1.png)
-![img 2](img/img2.png)
+![img 1](resources/images/img1.png)
+![img 2](resources/images/img2.png)
  
 
 </div>
