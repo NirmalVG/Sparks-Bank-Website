@@ -1,5 +1,5 @@
 <div align="center">
-<h1> A Fully Functional Restaurant Website </h1>
+<h1> Sparks Bank Website </h1>
 
 
 [Live Preview](https://nirmalvg.github.io/Sparks-Bank-Website)
